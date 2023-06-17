@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/Footer.8e3334b4.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.5ca4ea95.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.78dec0e5.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.2920820c.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.0b23d71f.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/layout.svelte.a13b59df.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/_layout.ts.822e9be0.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout.79cb23d1.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/calculators-page.svelte.95b50b1c.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/Footer.bcee1404.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+
+
+
+
+
+
+
+
+
+<title>Calculators | NutraTech</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Calculate 1 rep max (1RM), BMR, body fat (bodyfat), and muscle potential.">
+
+
+<main><nav class="container-fluid"><ul><li><a href="/" aria-label="Back home">
+					<img src="/favicon.png" width="35" alt="Home"></a></li>
+			<li><a href="/" style="text-decoration: none" aria-label="Back home">NutraTech </a></li></ul>
+		<ul><li><a href="/calculators/" class="secondary">Calculators</a></li>
+			<li><a rel="external" href="/blog/" class="secondary">Blog</a></li>
+			<li><a rel="external" href="https://store.nutra.tk/store" class="secondary">Store</a></li>
+			<li><a href="https://github.com/nutratech/web" class="contrast" aria-label="Pico GitHub repository"><img src="/github-mark.svg" alt="Source" aria-hidden="true" width="25"></a></li></ul></nav></main>
+
+<main class="container"><h1>Calculators</h1>
+	<p>Calculators for various fitness metrics.</p>
+	<p>This page requires JavaScript ES6. Provided since Windows 7, Ubuntu 16.04, or macOS 10.10. Older
+		operating systems can use our CLI, available with
+	</p>
+	<pre>pip3 install nutra
+n calc -h</pre>
+
+	<p>Note that this page does not use cookies, network requests, or save your information. All
+		calculations happen within your web browser. If you close or refresh this page, your progress
+		will be lost and you will need to start again.
+	</p>
+	<p>Enjoy the calculators. Let us know of any mistakes, suggestions, or requests.</p>
+
+	
+	
+	
+	<h2>One-rep max</h2>
+	<form><label>Weight lifted
+			<input type="number" placeholder="e.g. 85" min="0" step="5"></label>
+		<label>5 reps performed
+			<input type="range" min="1" max="20" value="5"></label></form>
+
+	
+	<table><thead><tr><th># reps</th>
+				<th>Epley</th>
+				<th>Brzycki</th>
+				<th>dos Remedios</th></tr></thead>
+		<tbody><tr><td>1</td><td>0</td><td>0</td><td>0</td>
+				</tr><tr><td>2</td><td>0</td><td>0</td><td>0</td>
+				</tr><tr><td>3</td><td>0</td><td>0</td><td>0</td>
+				</tr><tr><td>5</td><td>0</td><td>0</td><td>0</td>
+				</tr><tr><td>6</td><td>0</td><td>0</td><td>0</td>
+				</tr><tr><td>8</td><td>0</td><td>0</td><td>0</td>
+				</tr><tr><td>10</td><td>0</td><td>0</td><td>0</td>
+				</tr><tr><td>12</td><td>0</td><td>0</td><td>0</td>
+				</tr><tr><td>15</td><td>0</td><td>0</td><td>0</td>
+				</tr><tr><td>20</td><td>0</td><td>0</td><td>0</td>
+				</tr></tbody></table>
+
+	
+	<h3>Sources</h3>
+	<ul><li><a href="https://en.wikipedia.org/wiki/One-repetition_maximum">1 rep-max Equations, Epley &amp; Brzycki (Wikipedia)
+			</a></li>
+		<li><a href="https://www.peterrobertscoaching.com/blog/the-best-way-to-calculate-1-rep-max">1 rep-max Equation, dos Remedios
+			</a></li></ul>
+
+	
+	
+	
+	<h2>Calorie expenditure (BMR)</h2>
+	<form>
+		<h4>McArdle &amp; Cunningham</h4>
+		<div class="grid"><label>Weight (kg)
+				<input type="number" placeholder="e.g. 75" min="0" max="400" step="0.5"></label>
+			
+			<label>Activity Factor<br>[Light 2/5]
+				<input type="range" min="1" max="5" value="2"></label>
+
+			<label>Body fat (%)
+				<input type="number" min="0" max="75" placeholder="e.g. 15"></label>
+			<label>Gender
+				<select><option value="MALE">MALE</option><option value="FEMALE">FEMALE</option></select></label></div>
+
+		
+		<h4>St. Jeor &amp; Benedict</h4>
+		<div class="grid"><label>Height (cm)
+				<input type="number" min="30" max="275" placeholder="e.g. 180"></label>
+			<label>Age (years)
+				<input type="number" min="0" max="175" placeholder="e.g. 25"></label></div></form>
+
+	
+	<table><thead><tr><th>Equation</th>
+				<th>BMR</th>
+				<th>TDEE</th></tr></thead>
+		<tbody></tbody></table>
+
+	
+	<h3>Sources</h3>
+	<ul><li><a href="https://www.calculatorpro.com/calculator/katch-mcardle-bmr-calculator/">Caloric Expenditure Equation, Katch McArdle (Source 1)
+			</a></li>
+		<li><a href="https://tdeecalculator.net/about.php">Caloric Expenditure Equation, Katch McArdle (&amp; Harris Benedict)
+			</a></li>
+		<li><a href="https://www.slideshare.net/lsandon/weight-management-in-athletes-lecture">Caloric Expenditure Equation, Cunningham
+			</a></li>
+		<li><a href="https://www.myfeetinmotion.com/mifflin-st-jeor-equation/">Caloric Expenditure Equation, Mifflin St. Jeor
+			</a></li></ul>
+
+	
+	
+	
+	<h2>Body fat</h2>
+	<form>
+		<h4>Navy</h4>
+		<div class="grid"><label>Gender
+				<select><option value="MALE">MALE</option><option value="FEMALE">FEMALE</option></select></label>
+			<label>Height (cm)
+				<input type="number" min="30" max="275" placeholder="e.g. 180"></label>
+			<label>Age (years)
+				<input type="number" min="0" max="175" placeholder="e.g. 25"></label>
+			<label>Waist (cm)
+				<input type="number" min="15" max="400" step="0.5" placeholder="e.g. 90"></label>
+			<label>Neck (cm)
+				<input type="number" min="5" max="90" step="0.5" placeholder="e.g. 40"></label>
+			<label>Hip (cm)
+				
+				<input disabled type="number" min="15" max="210" placeholder="e.g. 80"></label></div>
+
+		
+		<h4>Three site</h4>
+		<div class="grid"><label>Chest (mm)
+				<input type="number" min="2" max="70" placeholder="e.g. 20" value="15"></label>
+			<label>Abdominal (mm)
+				<input type="number" min="2" max="70" placeholder="e.g. 20" value="15"></label>
+			<label>Thigh (mm)
+				<input type="number" min="2" max="70" placeholder="e.g. 20" value="15"></label></div>
+
+		
+		<h4>Seven site</h4>
+		<div class="grid"><label>Tricep (mm)
+				<input type="number" min="2" max="70" placeholder="e.g. 20" value="15"></label>
+			<label>Subscapula (mm)
+				<input type="number" min="2" max="70" placeholder="e.g. 20" value="15"></label>
+			<label>Suprailiac (mm)
+				<input type="number" min="2" max="70" placeholder="e.g. 20" value="15"></label>
+			<label>Midaxillary (mm)
+				<input type="number" min="2" max="70" placeholder="e.g. 20" value="15"></label></div></form>
+
+	
+	<table><thead><tr><th>Navy</th>
+				<th>3 Site</th>
+				<th>7 Site</th></tr></thead>
+		<tbody><tr><td>NaN</td><td>NaN</td><td>NaN</td></tr></tbody></table>
+
+	
+	<h3>Sources</h3>
+	<ul><li><a href="https://www.thecalculator.co/health/Navy-Method-Body-Fat-Measurement-Calculator-1112.html">Body Fat Equation, Navy
+			</a></li>
+		<li><a href="https://www.thecalculator.co/health/Body-Fat-Percentage-3-Site-Skinfold-Test-1113.html">Body Fat Equation, 3 Site (skin calipers)
+			</a></li>
+		<li><a href="https://www.thecalculator.co/health/Body-Fat-Percentage-7-Site-Skinfold-Calculator-1115.html">Body Fat Equation, 7 Site (skin calipers)
+			</a></li></ul>
+
+	
+	
+	
+	<h2>Lean body limits (young men)</h2>
+	<form>
+		<h4>Berkhan &amp; Helms</h4>
+		<div class="grid"><label>Height (cm)
+				<input type="number" min="30" max="275" placeholder="e.g. 180"></label>
+			<label>Desired Body Fat %
+				<input type="number" min="4" max="70" step="0.5" placeholder="e.g. 15" value="5.5"></label></div>
+
+		
+		<h4>Casey Butt, PhD</h4>
+		<div class="grid"><label>Wrist (cm)
+				<input type="number" min="4" max="40" step="0.25" placeholder="e.g. 17.5"></label>
+			<label>Ankle (cm)
+				<input type="number" min="4" max="70" step="0.25" placeholder="e.g. 21.5"></label></div></form>
+
+	
+	<table><thead><tr><th>Equation</th>
+				<th>Condition</th>
+				<th>Weight</th></tr></thead>
+		
+		<tbody><tr><td>Berkhan</td><td></td><td>Berkhan equation failed!</td>
+				</tr><tr><td>Helms</td><td></td><td>Helms equation failed!</td>
+				</tr><tr><td>Casey</td><td></td><td>Casey equation failed!</td>
+				</tr></tbody></table>
+	
+	<h4>Casey Butt</h4>
+	<table><thead><tr><th>Measurement</th>
+				<th>Max value (inches)</th></tr></thead>
+		<tbody><tr><td>chest</td>
+					<td>NaN</td>
+				</tr><tr><td>arm</td>
+					<td>NaN</td>
+				</tr><tr><td>forearm</td>
+					<td>NaN</td>
+				</tr><tr><td>neck</td>
+					<td>NaN</td>
+				</tr><tr><td>thigh</td>
+					<td>NaN</td>
+				</tr><tr><td>calf</td>
+					<td>NaN</td>
+				</tr></tbody></table>
+
+	
+	<h3>Sources</h3>
+	<ul><li><a href="https://rippedbody.com/maximum-muscular-potential/">Lean Body Limits Equation (young men), Berkhan
+			</a></li>
+		<li><a href="https://www.alanaragonblog.com/wp-content/uploads/2014/11/Aug-2014-AARR-Eric-Helms-Article.pdf">Lean Body Limits Equation (young men), Eric Helms [Solved with BMI equations]
+			</a></li>
+		<li><a href="https://fastfoodmacros.com/maximum-muscular-potential-calculator.asp">Lean Body Limits Equation (young men), Casey Butt
+			</a></li>
+		<li><a href="https://www.poseidonperformance.com/blog/what-is-the-maximum-muscular-potential-of-drug-free-athletes-or-natural-bodybuilders">Lean Body Limits Equation (young men), Casey Butt (Source 2)
+			</a></li></ul>
+
+	
+	<main><hr>
+	<div id="footer"><span style="float:left">Built with SvelteJS.</span>
+		<span style="float:right">Nutra Web (v0.3.21)</span></div></main></main>
+
+
+			
+			<script>
+				{
+					__sveltekit_1n6xgs6 = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.5ca4ea95.js"),
+						import("../_app/immutable/entry/app.0b23d71f.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 3],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

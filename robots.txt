@@ -1,0 +1,14 @@
+# Block old routes (don't exist anymore)
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: AdIdxBot
+Disallow: /api/*
+Disallow: /app/*
+Disallow: /docs/*
+
+# Allow all others
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://nutra.tk/sitemap.xml
